@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Score Keeper</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1799&q=80"
+          alt="table tennis raket"
+        />
+      </div>
+      <p id="scoreHeader">Ping Pong Score Keeper</p>
+      <div id="scoreTable">
+        <h1>
+          <span id="firstPlyrScore">0</span> to
+          <span id="secondPlyrScore">0</span>
+        </h1>
+        <p>Use the buttons below to keep score</p>
+        <label for="finish">Playing To </label>
+        <select name="finish" id="finish">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+        </select>
+      </div>
+      <div id="buttons">
+        <button id="plyrOneInc">+1 Player One</button>
+        <button id="plyrTwoInc">+1 Player Two</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
