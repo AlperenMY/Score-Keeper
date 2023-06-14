@@ -38,10 +38,6 @@ plyrTwoInc.addEventListener("click", () => {
   increment(secondPlyrScore);
 });
 
-reset.addEventListener("click", () => {
-  resetScores();
-});
+reset.addEventListener("click", resetScores);
 
-finishScore.addEventListener("input", () => {
-  resetScores();
-});
+finishScore.addEventListener("input", resetScores);
