@@ -10,11 +10,11 @@ const increment = (obj) => {
   let newScore = ++curScore;
   obj.innerText = newScore;
   if (newScore == finishScore.value) {
-    obj.classList.add("win");
+    obj.classList.add("has-text-success");
     if (obj.id === "firstPlyrScore") {
-      secondPlyrScore.classList.add("lose");
+      secondPlyrScore.classList.add("has-text-danger");
     } else {
-      firstPlyrScore.classList.add("lose");
+      firstPlyrScore.classList.add("has-text-danger");
     }
     plyrOneInc.disabled = true;
     plyrTwoInc.disabled = true;
@@ -26,8 +26,8 @@ const resetScores = () => {
   secondPlyrScore.innerText = "0";
   plyrOneInc.disabled = false;
   plyrTwoInc.disabled = false;
-  firstPlyrScore.classList.remove("win", "lose");
-  secondPlyrScore.classList.remove("win", "lose");
+  firstPlyrScore.classList.remove("has-text-success", "has-text-danger");
+  secondPlyrScore.classList.remove("has-text-success", "has-text-danger");
 };
 
 plyrOneInc.addEventListener("click", () => {
